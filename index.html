@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>雾江校园论坛 - 连接每个校园故事</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- 页面头部 -->
+    <header class="forum-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-area">
+                    <h1 class="logo">雾江校园论坛</h1>
+                    <p class="tagline">连接你我青春</p>
+                </div>
+                
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <nav class="main-nav" id="mainNav">
+                    <ul>
+                        <li><a href="index.html" class="active">首页</a></li>
+                        <li><a href="sections/campus_life.html">日常杂谈</a></li>
+                        <li><a href="sections/study_group.html">学习交流</a></li>
+                        <li><a href="sections/mystery_corner.html">匿名树洞</a></li>
+                        <li><a href="sections/announcements.html">校内公告</a></li>
+                    </ul>
+                    <div class="user-actions">
+                        <button class="btn-login">登录</button>
+                        <button class="btn-register">注册</button>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- 主要内容区 -->
+    <main class="container main-content">
+        <!-- 欢迎横幅 -->
+        <section class="welcome-banner">
+            <h2>欢迎使用雾江校园论坛！</h2>
+            <p>相聚雾江，让未来更丰富多彩！</p>
+            <div class="online-counter">
+                <span>当前在线: <strong>1,283</strong> 人</span>
+                <span>今日帖子: <strong>347</strong> 篇</span>
+            </div>
+        </section>
+
+        <!-- 紧急通知栏（小说线索） -->
+        <div class="urgent-notice">
+            <strong>【通知】</strong> 近期校园内发生多起异常事件，请同学们夜间不要单独在​̺̎旧​͍͗校​̻̍区活动
+        </div>
+
+        <!-- 论坛分区网格 -->
+        <section class="forum-sections">
+            <h2 class="section-title">论坛分区</h2>
+            <div class="sections-grid">
+                <!-- 日常杂谈分区 -->
+                <div class="section-card">
+                    <div class="section-icon">🪴</div>
+                    <h3><a href="sections/campus_life.html">日常杂谈</a></h3>
+                    <p>自由分享你的每一刻</p>
+                    <div class="section-stats">
+                        <span>帖子: 1,243</span>
+                        <span>今日: 27</span>
+                    </div>
+                </div>
+
+                <!-- 学习交流分区 -->
+                <div class="section-card">
+                    <div class="section-icon">📚</div>
+                    <h3><a href="sections/study_group.html">学习交流</a></h3>
+                    <p>互相监督，共同进步</p>
+                    <div class="section-stats">
+                        <span>帖子: 892</span>
+                        <span>今日: 15</span>
+                    </div>
+                </div>
+
+                <!-- 匿名树洞分区 -->
+                <div class="section-card highlight-section">
+                    <div class="section-icon">🎭</div>
+                    <h3><a href="sections/mystery_corner.html">匿名树洞</a></h3>
+                    <p>你不敢说的悄悄话，有人倾听</p>
+                    <div class="section-stats">
+                        <span>帖子: 567</span>
+                        <span>今日: 8</span>
+                    </div>
+                    <div class="new-badge">NEW</div>
+                </div>
+
+                <!-- 校内公告分区 -->
+                <div class="section-card">
+                    <div class="section-icon">📢</div>
+                    <h3><a href="sections/announcements.html">校内公告</a></h3>
+                    <p>校内大小事及时知</p>
+                    <div class="section-stats">
+                        <span>帖子: 734</span>
+                        <span>今日: 12</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 最新帖子 -->
+        <section class="recent-posts">
+            <h2 class="section-title">近期热帖</h2>
+            <div class="posts-list">
+                <div class="post-preview">
+                    <h4><a href="posts/campus_life/help-lost-campus-card-library-4-east.html">【求助】图书馆四楼东侧自习室有人丢校园卡吗？</a></h4>
+                    <div class="post-meta">
+                        <span class="author">招魂小鸡腿</span>
+                        <span class="time">2月16日</span>
+                        <span class="section">日常杂谈</span>
+                    </div>
+                </div>
+                
+                <div class="post-preview">
+                    <h4><a href="posts/study_group/math-midterm-key-points.html">高数期中考试重点整理，需要的进<span style="color: red;">[封]</a></h4>
+                    <div class="post-meta">
+                        <span class="author">作者: 小江M8pH <span style="color: red;">[已封号]</span></span>
+                        <span class="time">3月16日</span>
+                        <span class="section">学习交流</span>
+                    </div>
+                </div>
+                
+                <!-- 隐藏的管理员帖子彩蛋 -->
+                <div class="post-preview admin-post" id="adminPost">
+                    <h4><a href="#" class="admin-post-link">【系统通知】关于近期校园网络维护的说明</a></h4>
+                    <div class="post-meta">
+                        <span class="author">网络中心</span>
+                        <span class="time">3天前</span>
+                        <span class="section">校内公告</span>
+                    </div>
+                </div>
+                
+                <div class="post-preview urgent-post">
+                    <h4><a href="posts/horror_chapter_1.html">【紧急求助】千万不要在午夜独自去实验楼...</a></h4>
+                    <div class="post-meta">
+                        <span class="author">匿名用户lN8gQ7jL</span>
+                        <span class="time">昨天 23:45</span>
+                        <span class="section">匿名树洞</span>
+                    </div>
+                </div>
+                
+                <div class="post-preview">
+                    <h4><a href="posts/horror_chapter_2.html">【续】实验楼307室的秘密，我发现了...</a></h4>
+                    <div class="post-meta">
+                        <span class="author">匿名用户lN8gQ7jL</span>
+                        <span class="time">今天 08:30</span>
+                        <span class="section">匿名树洞</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 论坛统计 -->
+        <section class="forum-stats">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">12,847</div>
+                    <div class="stat-label">注册用户</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">56,392</div>
+                    <div class="stat-label">主题帖子</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">284,756</div>
+                    <div class="stat-label">回复数量</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">7,839</div>
+                    <div class="stat-label">在线记录</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="forum-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>关于论坛</h3>
+                    <p>雾江校园论坛成立于2005年，是雾江大学最具影响力的学生交流平台。我们致力于记录真实的校园生活。</p>
+                </div>
+                <div class="footer-section">
+                    <h3>友情链接</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">雾江大学官网</a></li>
+                        <li><a href="#">校园新闻网</a></li>
+                        <li><a href="#">图书馆系统</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>联系方式</h3>
+                    <ul class="footer-links">
+                        <li>邮箱: forum@wujiang.edu</li>
+                        <li>电话: 0571-xxxxxxx</li>
+                        <li>地址: 雾江大学学生活动中心3楼</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2005-2023 雾江校园论坛 版权所有</p>
+                <p class="disclaimer">※ 本站所有内容均为用户自发分享，不代表论坛官方立场</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
