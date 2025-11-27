@@ -909,3 +909,43 @@ button, .btn {
         display: block;
     }
 }
+
+/* 移动端字体调整 - 高优先级 */
+@media (max-width: 767px) {
+    html {
+        font-size: 14px !important;
+    }
+    
+    body {
+        font-size: 1rem !important;
+    }
+    
+    /* 覆盖其他可能影响字体的样式 */
+    .logo {
+        font-size: 1.3rem !important;
+    }
+    
+    .section-post-title {
+        font-size: 1rem !important;
+    }
+    
+    .post-detail-title {
+        font-size: 1.2rem !important;
+    }
+    
+    .welcome-banner h2 {
+        font-size: 1.4rem !important;
+    }
+    
+    .section-title {
+        font-size: 1.3rem !important;
+    }
+    
+    .main-nav a {
+        font-size: 0.9rem !important;
+    }
+    
+    .btn-login, .btn-register {
+        font-size: 0.85rem !important;
+    }
+}
